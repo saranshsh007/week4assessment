@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgg_vzJxKX45L_hjheF0BWmZmdmweVOz3Q2fVsx-oQo-6jj55SM1tvfqYEmaCFKvsSbJboLacdqJ8T2J1M67nNPgwo0aS-Ur1RNJ9yjkZOnIRNP4b-rn3U73JODgHV3rrDGjscesK2Mjw3HrwzIz-l7E6CyhcvFH-ITEE14tKowCU5cZzpS0QxPXYEP7A/s1920/4k-batman-wallpaper-ai-generated.webp');
+    background-size: cover;
+    position: relative;
+    backdrop-filter: blur(8px);
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#loginButton {
+    display: flex;
+    align-items: center;
+}
+
+#loginButton i {
+    margin-right: 5px;
+}
+
+h1 {
+    margin: 0;
+}
+
+#searchInput {
+    width: 300px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#searchButton {
+    padding: 5px 10px;
+}
+
+#resultsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movieCard {
+    width: 250px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.movieCard img {
+    width: 100%;
+}
+
+.movieCard h2 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+.movieCard p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: white;
+}
+
+#resultsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#resultsContainer .noMoviesMessage {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+}
