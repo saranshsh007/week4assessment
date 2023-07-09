@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube API Integration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>YouTube API Integration</h1>
+
+    <!-- User Authentication -->
+    <div id="auth-container">
+      <button id="login-btn">Login with YouTube</button>
+    </div>
+
+    <!-- Playlist Creation -->
+    <div id="playlist-creation-container" style="display: none;">
+      <h2>Create Playlist</h2>
+      <form id="playlist-form">
+        <input type="text" name="title" placeholder="Playlist Title" required>
+        <button type="submit">Create</button>
+      </form>
+    </div>
+
+    <!-- Playlist Management -->
+    <div id="playlist-management-container" style="display: none;">
+      <h2>My Playlists</h2>
+      <ul id="playlist-list"></ul>
+    </div>
+
+    <!-- Video Search -->
+    <div id="video-search-container" style="display: none;">
+      <h2>Search Videos</h2>
+      <form id="search-form">
+        <input type="text" name="query" placeholder="Search Query" required>
+        <button type="submit">Search</button>
+      </form>
+      <ul id="search-results"></ul>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
