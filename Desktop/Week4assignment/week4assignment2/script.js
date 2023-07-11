@@ -47,8 +47,18 @@ $(document).ready(function () {
   function handleLogin() {
     gapi.auth2.getAuthInstance().signIn().then(function () {
       handleAuthenticated();
-    });
+    }),
+    function (error) {
+      if (error.error === 'popup_closed_by_user') {
+        // Display appropriate messaging to the user
+        console.log('Authentication canceled by user');
+      } else {
+        // Handle other authentication errors
+        console.error('Authentication error:', error);
+      }
+    }
   }
+  
 
   // Handle the logout event
   function handleLogout() {
